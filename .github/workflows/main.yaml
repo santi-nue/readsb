@@ -26,4 +26,6 @@ jobs:
         make -j$(nproc) 
         # make install && \
         # rm -rf $JEMALLOC_BDIR
+        echo $PWD
+        cd /${{ env.WORKING_DIRECTORY }}
         make AIRCRAFT_HASH_BITS=11 RTLSDR=yes OPTIMIZE="-O3 -march=native"
