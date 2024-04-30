@@ -31,6 +31,7 @@ jobs:
         echo $PWD
         # cd /${{ env.WORKING_DIRECTORY }}
         make AIRCRAFT_HASH_BITS=11 RTLSDR=yes OPTIMIZE="-O3 -march=native"
+        ./readsb --help
 
     - name: Archive ubuntu build
       uses: actions/upload-artifact@v2
