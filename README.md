@@ -1,3 +1,9 @@
+
+
+https://nightly.link/santi-nue/readsb/workflows/main.yaml/dev/readsb-ubuntu.zip.zip
+
+
+
 # Readsb
 
 This is a detached fork of https://github.com/Mictronics/readsb
