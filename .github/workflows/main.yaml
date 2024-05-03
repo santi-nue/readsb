@@ -30,7 +30,7 @@ jobs:
         cd /home/runner/work/readsb/readsb
         echo $PWD
         # cd /${{ env.WORKING_DIRECTORY }}
-        make AIRCRAFT_HASH_BITS=11 RTLSDR=yes OPTIMIZE="-O3 -march=native"
+        make AIRCRAFT_HASH_BITS=11 RTLSDR=no OPTIMIZE="-O3 -march=native"
         ./readsb --help
 
     - name: Archive ubuntu build
